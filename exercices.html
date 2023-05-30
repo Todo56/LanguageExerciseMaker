@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Exercises Maker</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		.inputExercise {
+			border-radius: 25px
+		}
+
+		.incorrect {
+			color: red;
+		}
+
+		.correct {
+			color: green;
+		}
+
+		.sentence {
+			width: 70%;
+		}
+
+		.resultText {
+			overflow: hidden;
+			white-space: nowrap;
+			display: inline;
+		}
+	</style>
+</head>
+
+<body class="bg-light">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">
+							Dropdown
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<br>
+		<div id="title"></div><br><br>
+		<div id="main">
+
+		</div>
+	</div>
+	<footer class="bg-dark text-center text-white">
+		<div class="container p-4">
+			<section class="mb-4">
+				<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+						class="fab fa-facebook-f"></i></a>
+				<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+						class="fab fa-twitter"></i></a>
+				<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+						class="fab fa-google"></i></a>
+				<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+						class="fab fa-instagram"></i></a>
+				<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+						class="fab fa-linkedin-in"></i></a>
+				<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+						class="fab fa-github"></i></a>
+			</section>
+			<section class="mb-4">
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+					repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+					eum harum corrupti dicta, aliquam sequi voluptate quas.
+				</p>
+			</section>
+			<section class="">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase">Links</h5>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="#!" class="text-white">Link 1</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Link 2</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Link 3</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Link 4</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase">Links</h5>
+
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="#!" class="text-white">Link 1</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Link 2</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Link 3</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Link 4</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase">Links</h5>
+
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="#!" class="text-white">Link 1</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Link 2</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Link 3</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Link 4</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase">Links</h5>
+
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="#!" class="text-white">Link 1</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Link 2</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Link 3</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white">Link 4</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+			&copy; 2020 Copyright
+			<a class="text-white" href="https://todo56.dev">Todo56.dev</a>
+		</div>
+	</footer>
+</body>
+<script>
+	// Initialize Object for exercises
+	let exercicesObj = [
+		{
+			"description": "Complete the following sentences.",
+			"type": "complete",
+			"questions": [
+				{
+					"text": "Joe Biden is a {input}.",
+					"validAnswers": ["hoi4", "HOI4"]
+				},
+				{
+					"text": "I am very {input}.",
+					"validAnswers": ["Pretty", "pretty"]
+				}
+			]
+		},
+		{
+			"description": "Change the direct speech into reported speech. Begin with the words 'She said'.",
+			"type": "sentences",
+			"questions": [
+				{
+					"text": "We go to London this afternoon.",
+					"validAnswers": ["she said that they would go to london that afternoon."]
+				},
+				{
+					"text": "Joe Biden is the high command of the Ethiopian army.",
+					"validAnswers": ["she said that joe biden was high command of the ethiopian army."]
+				}
+			]
+		},
+		{
+			"description": "Select the correct option.",
+			"type": "select",
+			"questions": [
+				{
+					"text": "Joe Biden is ____.",
+					"options": ["sleepy", "the president of the usa", "stupid", "joe Biden"],
+					"correct": 0
+				},
+				{
+					"text": "El martin es ____.",
+					"options": ["stupido", "the president of the usa", "inteligente", "joe Biden"],
+					"correct": 1
+				}
+			]
+		},
+		{
+			"description": "Complete the text with the missing words.",
+			"type": "completetext",
+			"availableWords": ["Joe Biden", "Martin Rosenberger", "Gottfried Rosenberger"],
+			"text": "The president of the united states is {0}. Furthermore, the president of chad and therefore the biggest Gigachad is {1}. Finally the presidenf of Niger and therefore the biggest nigger is {2}.",
+			"correctOptions": ["Joe Biden", "Gottfried Rosenberger", "Martin Rosenberger"],
+			"context": {
+				0: "he's a bit stupid",
+				1: "He's the best hoi4 player",
+				2: "The last option"
+			}
+		}
+	];
+	// Title of the worksheet
+	let titleOfWorksheet = "Sleepy Joe Biden goes to town";
+
+	// Declare loading function
+	function loadExercises() {
+		// Set the title in HTML
+		document.getElementById("title").innerHTML = `<h1 class='text-center'><b>${titleOfWorksheet}</b></h1>`
+		// Load the main element of HTML where all exercises will go.
+		let div = document.getElementById("main");
+		// Start look for every exercise in the object.
+		for (let exerciseNumber in exercicesObj) {
+			let HTMLObj = "";
+			// realNumber is the number of exercise that will be shown in the worksheet.
+			// Normal human beings don't start counting from 0.
+			let realNumber = parseInt(exerciseNumber) + 1;
+			// Exercise object
+			let exercise = exercicesObj[exerciseNumber];
+			// Add the Exercise number and its description to the HTML.
+			HTMLObj = HTMLObj + `${realNumber}. ${exercise.description} <br>`;
+			HTMLObj = HTMLObj + `<ul><br>`;
+			// Regex to obtain all opening and closing brackets.
+			let regEx = /{(.*?)\}/gm;
+			// Switch to render different types of exercises.
+			switch (exercise.type) {
+				case "completetext":
+					let inputs = exercise.text.match(regEx);
+					let buildingText = exercise.text;
+					if (exercise.availableWords.length != 0) {
+						HTMLObj = HTMLObj + "<b>Words available: " + exercise.availableWords.join(", ") + "</b><br><br>";
+					}
+					for (let inputId in inputs) {
+						let input = inputs[inputId];
+						let value = parseInt(input.replace("{", "").replace("}", "")); // Small wacky code because javascript has no select regex shit
+						let inputToReplaceWith = exercise["context"][value] ? `<input class='inputExercise' type='text' id='${exerciseNumber}-${value}'> <b>(${exercise["context"][value]})</b><p class='resultText' id='${exerciseNumber}-${value}-q'></p>` : `<input class='inputExercise' type='text' id='${exerciseNumber}-${value}'><p class='resultText' id='${exerciseNumber}-${value}-q'></p>`;
+						buildingText = buildingText.replace(`{${value}}`, inputToReplaceWith);
+					}
+					HTMLObj = HTMLObj + buildingText;
+					break;
+				case "select":
+					for (let questionNumber in exercise.questions) {
+						let realQuestionNumber = parseInt(questionNumber) + 1;
+						let question = exercise.questions[questionNumber];
+						HTMLObj = HTMLObj + `<li>${realNumber}.${realQuestionNumber}. ${question.text}<br><div id='radios-${exerciseNumber}-${questionNumber}'>`
+						for (let option in question.options) {
+							let optionObj = question.options[option];
+							HTMLObj = HTMLObj + `
+							<div class="form-check">
+  								<input class="form-check-input" type="radio" value='${optionObj}' name="${exerciseNumber}-${questionNumber}" id="flexRadioDefault2">
+  								<label class="form-check-label" for="flexRadioDefault2">
+    								${optionObj}
+  								</label>
+							</div>`;
+						}
+						HTMLObj = HTMLObj + ` </div><div id='${exerciseNumber}-${questionNumber}-q'></div></li>`;
+					}
+					break;
+				case "complete":
+					for (let questionNumber in exercise.questions) {
+						let realQuestionNumber = parseInt(questionNumber) + 1;
+						let question = exercise.questions[questionNumber];
+						let questionText = question.text.replace(regEx, `<input class='inputExercise' type='text' id='${exerciseNumber}-${questionNumber}'>`);
+						HTMLObj = HTMLObj + `<li>${realNumber}.${realQuestionNumber}. ${questionText} <div id='${exerciseNumber}-${questionNumber}-q'></div></li>`;
+					}
+					break;
+				case "sentences":
+					for (let questionNumber in exercise.questions) {
+						let realQuestionNumber = parseInt(questionNumber) + 1;
+						let question = exercise.questions[questionNumber];
+						HTMLObj = HTMLObj + `<li>${realNumber}.${realQuestionNumber}. ${question.text}<br><input class='inputExercise sentence' type='text' id='${exerciseNumber}-${questionNumber}'> <div id='${exerciseNumber}-${questionNumber}-q'></div></li>`;
+					}
+					break;
+			}
+			HTMLObj = HTMLObj + `</ul><br>`;
+			HTMLObj = HTMLObj + `<input type='button' class='btn btn-sm btn-success' value='Check' onclick='checkExercises(${exerciseNumber})'>   `;
+			HTMLObj = HTMLObj + `<input type='button' class='btn btn-sm btn-info' value='Show Answers' onclick='showResults(${exerciseNumber})'>`;
+			HTMLObj = HTMLObj + `<div id='${exerciseNumber}-ratio'></div>`;
+			HTMLObj = HTMLObj + "<br><br>";
+			div.innerHTML = div.innerHTML + HTMLObj;
+		}
+	}
+
+	function checkExercises(exerciseId) {
+		let exercise = exercicesObj[exerciseId];
+		let correct;
+		let total;
+		correct = 0;
+		switch (exercise.type) {
+			case "completetext":
+				for (correctOptionIndex in exercise.correctOptions) {
+					let correctOption = exercise.correctOptions[correctOptionIndex];
+					let inputElement = document.getElementById(`${exerciseId}-${correctOptionIndex}`);
+					let answerPlace = document.getElementById(`${exerciseId}-${correctOptionIndex}-q`);
+					if (inputElement.value.toLowerCase() == correctOption.toLowerCase()) {
+						answerPlace.innerHTML = "<p class='correct resultText'> Correct</p>";
+						correct = correct + 1;
+					} else {
+						answerPlace.innerHTML = "<p class='incorrect resultText'> Incorrect</p>";
+					}
+				}
+				break;
+			case "complete":
+				for (let questionNumber in exercise.questions) {
+					let question = exercise.questions[questionNumber];
+					let value = document.getElementById(`${exerciseId}-${questionNumber}`).value;
+					let answerPlace = document.getElementById(`${exerciseId}-${questionNumber}-q`);
+					if (question.validAnswers.includes(value)) {
+						answerPlace.innerHTML = "<p class='correct'>Correct </p>";
+						correct = correct + 1;
+					} else {
+						answerPlace.innerHTML = "<p class='incorrect'>Incorrect </p>";
+					}
+				}
+				total = exercise.questions.length;
+				document.getElementById(`${exerciseId}-ratio`).innerHTML = `${correct}/${total}`;
+				break;
+			case "sentences":
+				for (let questionNumber in exercise.questions) {
+					let question = exercise.questions[questionNumber];
+					let value = document.getElementById(`${exerciseId}-${questionNumber}`).value;
+					let answerPlace = document.getElementById(`${exerciseId}-${questionNumber}-q`);
+					if (question.validAnswers.includes(value.toLowerCase())) {
+						answerPlace.innerHTML = "<p class='correct'>Correct </p>";
+						correct = correct + 1;
+					} else {
+						answerPlace.innerHTML = "<p class='incorrect'>Incorrect </p>";
+					}
+				}
+				total = exercise.questions.length;
+				document.getElementById(`${exerciseId}-ratio`).innerHTML = `${correct}/${total}`;
+				break;
+			case "select":
+				for (let questionNumber in exercise.questions) {
+					let question = exercise.questions[questionNumber];
+					let answerPlace = document.getElementById(`${exerciseId}-${questionNumber}-q`);
+					let radios = document.getElementsByName(`${exerciseId}-${questionNumber}`);
+					answer = -1;
+					for (radioNum in radios) {
+						let element = radios[radioNum];
+						if (element.checked) {
+							answer = radioNum;
+						}
+					}
+					if (question.correct == answer) {
+						answerPlace.innerHTML = "<p class='correct'>Correct </p>";
+						correct = correct + 1;
+					} else {
+						answerPlace.innerHTML = "<p class='incorrect'>Incorrect </p>";
+					}
+				}
+				total = exercise.questions.length;
+				document.getElementById(`${exerciseId}-ratio`).innerHTML = `${correct}/${total}`;
+				break;
+		}
+	}
+
+	function showResults(exerciseId) {
+		let exercise = exercicesObj[exerciseId];
+		switch (exercise.type) {
+			case "completetext":
+				for (correctOptionIndex in exercise.correctOptions) {
+					document.getElementById(`${exerciseId}-${correctOptionIndex}`).placeholder = exercise.correctOptions[correctOptionIndex];
+				}
+				break;
+			case "complete":
+				for (let questionNumber in exercise.questions) {
+					let question = exercise.questions[questionNumber];
+					document.getElementById(`${exerciseId}-${questionNumber}`).placeholder = question.validAnswers[0];
+				}
+			case "sentences":
+				for (let questionNumber in exercise.questions) {
+					let question = exercise.questions[questionNumber];
+					document.getElementById(`${exerciseId}-${questionNumber}`).placeholder = question.validAnswers[0];
+				}
+				break;
+			case "select":
+				for (let questionNumber in exercise.questions) {
+					let question = exercise.questions[questionNumber];
+					let radios = document.getElementsByName(`${exerciseId}-${questionNumber}`);
+					for (radioNum in radios) {
+						let radio = radios[radioNum];
+						if (radioNum == question.correct) {
+							radio.checked = true;
+						}
+					}
+				}
+				break;
+		}
+	}
+	loadExercises();
+
+</script>
+
+</html>
